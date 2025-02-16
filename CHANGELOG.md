@@ -1,4 +1,7 @@
 # Changelog
+## [1.3.9] - 2025-02-16
+- Add languages
+
 ## [1.3.8] - 2024-12-13
 - Rm dependencies info
 

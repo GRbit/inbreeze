@@ -126,6 +126,7 @@ class AppState extends State<App> {
         Locale('de', 'DE'),
         Locale('es', 'ES'),
         Locale('fr', 'FR'),
+        Locale('pl', 'PL'),
         Locale('it', 'IT'),
         Locale('id', 'ID'),
         Locale('ru', 'RU'),
