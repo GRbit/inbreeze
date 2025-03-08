@@ -82,5 +82,6 @@
     "tempo_very_fast": "Sehr Schnell",
     "tempo_fast": "Schnell",
     "tempo_medium": "Mittel",
-    "tempo_slow": "Langsam"
+    "tempo_slow": "Langsam",
+    "recovery_pause_label": "Erholungspausendauer"
 }

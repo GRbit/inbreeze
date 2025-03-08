@@ -98,5 +98,7 @@
   "tempo_very_fast": "Bardzo szybkie",
   "tempo_fast": "Szybkie",
   "tempo_medium": "Średnie",
-  "tempo_slow": "Wolne"
+  "tempo_slow": "Wolne",
+
+  "recovery_pause_label": "Czas przerwy na odpoczynek"
 }

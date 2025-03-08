@@ -98,6 +98,8 @@
   "tempo_very_fast": "Very Fast",
   "tempo_fast": "Fast",
   "tempo_medium": "Medium",
-  "tempo_slow": "Slow"
+  "tempo_slow": "Slow",
+
+  "recovery_pause_label": "Recovery Pause Duration"
 }
   
