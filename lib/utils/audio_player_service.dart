@@ -49,6 +49,10 @@ class AudioPlayerService {
   }
 
 Future<void> play(String assetPath, double volume, String playerId) async {
+  if (volume == 0) {
+    return;
+  }
+
   try {
     await _session.setActive(true);
     var player = _players[playerId];
