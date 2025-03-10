@@ -82,5 +82,6 @@
     "tempo_very_fast": "Очень Быстро",
     "tempo_fast": "Быстро",
     "tempo_medium": "Средне",
-    "tempo_slow": "Медленно"
+    "tempo_slow": "Медленно",
+    "recovery_pause_label": "Длительность паузы восстановления"
 }

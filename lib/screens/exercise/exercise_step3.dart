@@ -24,6 +24,7 @@ class _ExerciseStep3State extends State<ExerciseStep3> {
   Duration tempoDuration = Duration(seconds: 2);
   String innerText = 'in';
   Timer? breathCycleTimer;
+  int recoveryPause = 15;
 
   @override
   void initState() {
@@ -35,9 +36,10 @@ class _ExerciseStep3State extends State<ExerciseStep3> {
 
   Future<void> _loadDataFromPreferences() async {
     final userProvider = Provider.of<UserProvider>(context, listen: false);
-    final preferences = await userProvider.loadUserPreferences(['volume']);
+    final preferences = await userProvider.loadUserPreferences(['volume', 'recoveryPause']);
     setState(() {
       volume = preferences.volume;
+      recoveryPause = preferences.recoveryPause;
     });
   }
 
@@ -62,15 +64,14 @@ class _ExerciseStep3State extends State<ExerciseStep3> {
   void startBreathCounting() {
     breathCycleTimer = Timer.periodic(Duration(seconds: 1), (timer) {
       if (animationControl == 'pause') return;
-      // Pause logic
       setState(() {
         customTicker++;
         if (customTicker < 2) {
           innerText = 'in';
-        } else if (customTicker < 17) {
-          innerText = (17 - customTicker).toString();
+        } else if (customTicker < recoveryPause + 2) {
+          innerText = (recoveryPause + 2 - customTicker).toString();
           animationControl = 'stop';
-        } else if (customTicker >= 17 && customTicker <= 18) {
+        } else if (customTicker >= recoveryPause + 2 && customTicker <= recoveryPause + 3) {
           innerText = 'out';
           animationControl = 'reverse';
         } else {

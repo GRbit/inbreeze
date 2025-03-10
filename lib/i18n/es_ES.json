@@ -82,5 +82,6 @@
     "tempo_very_fast": "Muy Rápido",
     "tempo_fast": "Rápido",
     "tempo_medium": "Medio",
-    "tempo_slow": "Lento"
+    "tempo_slow": "Lento",
+    "recovery_pause_label": "Duración de la Pausa de Recuperación"
 }

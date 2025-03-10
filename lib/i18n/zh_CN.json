@@ -82,5 +82,6 @@
     "tempo_very_fast": "非常快",
     "tempo_fast": "快",
     "tempo_medium": "中等",
-    "tempo_slow": "慢"
+    "tempo_slow": "慢",
+    "recovery_pause_label": "恢复暂停时间"
 }

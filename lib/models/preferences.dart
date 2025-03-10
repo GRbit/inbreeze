@@ -5,6 +5,7 @@ class Preferences {
   int breaths;
   int volume;
   bool screenAlwaysOn;
+  int recoveryPause;
 
   Preferences({
     this.notificationEnabled = true,
@@ -12,8 +13,8 @@ class Preferences {
     this.tempo = 1668,
     this.breaths = 30,
     this.volume = 100, 
-    this.screenAlwaysOn = true
-
+    this.screenAlwaysOn = true,
+    this.recoveryPause = 15
   });
 
   Map<String, dynamic> toJson() {
@@ -23,7 +24,8 @@ class Preferences {
       'tempo': tempo,
       'breaths': breaths,
       'volume': volume,
-      'screenAlwaysOn': screenAlwaysOn
+      'screenAlwaysOn': screenAlwaysOn,
+      'recoveryPause': recoveryPause
     };
   }
 
@@ -35,6 +37,7 @@ class Preferences {
       breaths: json['breaths'] ?? 30,
       volume: json['volume'] ?? 90,
       screenAlwaysOn: json['screenAlwaysOn'] ?? true,
+      recoveryPause: json['recoveryPause'] ?? 15,
     );
   }
 }
