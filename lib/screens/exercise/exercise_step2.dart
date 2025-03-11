@@ -98,7 +98,13 @@ class _ExerciseStep2State extends State<ExerciseStep2> {
               child: Center(
                 child: Padding(
                   padding: const EdgeInsets.all(16.0),
-                  child: CustomTimer(duration: duration),
+                  child: MouseRegion(
+                    cursor: SystemMouseCursors.click,
+                    child: GestureDetector(
+                      onTap: _navigateToNextExercise,
+                      child: CustomTimer(duration: duration),
+                    ),
+                  ),
                 ),
               ),
             ),
