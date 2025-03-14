@@ -1,6 +1,6 @@
 # Changelog
 
-## [1.3.10] - 2025-03-14
+## [1.4.0] - 2025-03-14
 - Add precise breathe control
 - Add recovery pause preference
 - Turn off sound on 0 volume
